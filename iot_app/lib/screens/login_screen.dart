@@ -12,6 +12,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+<<<<<<< HEAD
       backgroundColor: Color(0xfffff1cd),
       appBar: AppBar(
         backgroundColor: Color(0xfffff1cd),
@@ -21,12 +22,20 @@ class LoginScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         
+=======
+      appBar: AppBar(
+        title: Text('로그인'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             TextFormField(
               controller: _usernameController,
+<<<<<<< HEAD
               decoration: InputDecoration(
               labelText: 'ID',
               labelStyle: TextStyle(color: Colors.black),
@@ -54,12 +63,32 @@ class LoginScreen extends StatelessWidget {
               ),
                 ),
               style: TextStyle(color: Colors.black), // 텍스트 색상
+=======
+              decoration: InputDecoration(labelText: 'ID'),
+            ),
+            SizedBox(height: 8),
+            TextFormField(
+              controller: _passwordController,
+              obscureText: true,
+              decoration: InputDecoration(labelText: 'Password'),
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
             ),
             SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
+<<<<<<< HEAD
                 _login(context);
               },
+=======
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => HomeScreen(),
+                  ),
+                );
+              },
+              //=> _login(context),
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
               child: Text('로그인'),
             ),
             SizedBox(height: 16),
@@ -81,6 +110,7 @@ class LoginScreen extends StatelessWidget {
   }
 
   Future<void> _login(BuildContext context) async {
+<<<<<<< HEAD
   String username = _usernameController.text;
   String password = _passwordController.text;
 
@@ -109,13 +139,62 @@ class LoginScreen extends StatelessWidget {
           builder: (context) => HomeScreen(),
         ),
       );
+=======
+    String username = _usernameController.text;
+    String password = _passwordController.text;
+
+    final response = await http.post(
+      Uri.parse('http://127.0.0.1:5000/login'), // Flask 서버 주소
+      headers: <String, String>{
+        'Content-Type': 'application/json; charset=UTF-8',
+      },
+      body: jsonEncode(<String, String>{
+        'username': username,
+        'password': password,
+      }),
+    );
+
+    if (response.statusCode == 200) {
+      var responseData = jsonDecode(response.body);
+      if (responseData['success']) {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => HomeScreen(),
+          ),
+        );
+      } else {
+        showDialog(
+          context: context,
+          builder: (context) {
+            return AlertDialog(
+              title: Text('로그인 실패'),
+              content: Text('ID 또는 비밀번호가 일치하지 않습니다.'),
+              actions: [
+                TextButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Text('확인'),
+                ),
+              ],
+            );
+          },
+        );
+      }
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
     } else {
       showDialog(
         context: context,
         builder: (context) {
           return AlertDialog(
+<<<<<<< HEAD
             title: Text('로그인 실패'),
             content: Text('ID 또는 비밀번호가 일치하지 않습니다.'),
+=======
+            title: Text('에러'),
+            content: Text('로그인 실패.'),
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
             actions: [
               TextButton(
                 onPressed: () {
@@ -128,6 +207,7 @@ class LoginScreen extends StatelessWidget {
         },
       );
     }
+<<<<<<< HEAD
   } else {
     showDialog(
       context: context,
@@ -146,6 +226,8 @@ class LoginScreen extends StatelessWidget {
         );
       },
     );
+=======
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
   }
 }
 }

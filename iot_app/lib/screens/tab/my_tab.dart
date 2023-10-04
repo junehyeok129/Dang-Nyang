@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:iot_app/screens/tab/settingScreen.dart';
+=======
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
 
 class MyTab extends StatefulWidget {
   const MyTab({super.key});
@@ -83,12 +86,16 @@ class _MyTabState extends State<MyTab> {
         children: [
           myWidget('assets/images/report.png', '이상 징후 기록'),
           myWidget('assets/images/siren.png', '응급센터'),
+<<<<<<< HEAD
           myWidget('assets/images/setting.png', '환경설정', onTap: () {
   Navigator.push(
     context,
     MaterialPageRoute(builder: (context) => SettingsScreen()),
   );
 }),
+=======
+          myWidget('assets/images/setting.png', '환경설정'),
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
         ],
       ),
     );

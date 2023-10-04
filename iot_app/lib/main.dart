@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iot_app/screens/home_screen.dart'; // 홈 화면 파일을 불러옴
+// import 'package:iot_app/screens/home_screen.dart'; // 홈 화면 파일을 불러옴
 import 'package:iot_app/screens/login_screen.dart'; // 로그인 화면 파일을 불러옴
 
 void main(List<String> args) {

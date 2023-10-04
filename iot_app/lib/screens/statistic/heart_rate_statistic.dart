@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:intl/intl.dart';
 import 'package:http/http.dart' as http;
 import 'package:iot_app/screens/statistic/components/date_period_widget.dart';
@@ -10,10 +11,19 @@ import 'dart:convert';
 
 class HeartRateStatistic extends StatefulWidget {
   const HeartRateStatistic({Key? key}) : super(key: key);
+=======
+import 'package:iot_app/screens/statistic/components/date_period_widget.dart';
+import 'package:iot_app/screens/statistic/components/statistic_box.dart';
+import 'package:iot_app/screens/statistic/components/text_info_widget.dart';
+
+class HeartRateStatistic extends StatefulWidget {
+  const HeartRateStatistic({super.key});
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
 
   @override
   State<HeartRateStatistic> createState() => _HeartRateStatisticState();
 }
+<<<<<<< HEAD
 class HeartRateData {
   final DateTime time;
   final int heartRate;
@@ -61,6 +71,10 @@ class _HeartRateStatisticState extends State<HeartRateStatistic> {
     }
   }
 
+=======
+
+class _HeartRateStatisticState extends State<HeartRateStatistic> {
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -93,6 +107,7 @@ class _HeartRateStatisticState extends State<HeartRateStatistic> {
                 margin: EdgeInsets.symmetric(horizontal: 24),
                 height: 180,
                 width: double.infinity,
+<<<<<<< HEAD
                 child: SfCartesianChart(
                   primaryXAxis: DateTimeAxis(
                     labelStyle: TextStyle(color: Colors.black), // X축 글자 색상 변경
@@ -111,6 +126,10 @@ class _HeartRateStatisticState extends State<HeartRateStatistic> {
                   // 그래프를 터치하면 해당 정보를 표시
                   tooltipBehavior: TooltipBehavior(enable: true),
                 ),
+=======
+                color: Colors.grey[350],
+                child: Text('그래프 그리기'),
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
               ),
               SizedBox(height: 28),
               StatisticBox(
@@ -129,6 +148,7 @@ class _HeartRateStatisticState extends State<HeartRateStatistic> {
     );
   }
 }
+<<<<<<< HEAD
 
 class DataPoint {
   final DateTime time;
@@ -154,3 +174,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+=======
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40

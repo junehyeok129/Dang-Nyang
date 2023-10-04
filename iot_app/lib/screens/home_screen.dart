@@ -34,6 +34,19 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+<<<<<<< HEAD
+=======
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  var tabIndex = 0;
+
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -43,6 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: AppBar(
           backgroundColor: Color(0xfffff1cd),
           elevation: 0,
+<<<<<<< HEAD
           title: Row(
             children: [
               Text(
@@ -61,11 +75,23 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ],
+=======
+          title: Text(
+            '댕냥워치',
+            style: TextStyle(
+              fontSize: 25,
+              color: Colors.black,
+            ),
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
           ),
         ),
         body: TabBarView(
           children: [
+<<<<<<< HEAD
             HomeTab(username: _username), // _username 변수를 전달
+=======
+            HomeTab(),
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
             HealthTab(),
             CalendarTab(),
             MyTab(),
@@ -115,6 +141,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   },
                 );
               },
+<<<<<<< HEAD
             ),
             // 개발자 모드
             SpeedDialChild(
@@ -124,6 +151,8 @@ class _HomeScreenState extends State<HomeScreen> {
               onTap: () {
                 // TODO: 개발자 모드 기능 수행
               },
+=======
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
             ),
           ],
         ),
@@ -188,7 +217,11 @@ class _BluetoothDeviceScreenState extends State<BluetoothDeviceScreen> {
             ),
           ],
         ),
+<<<<<<< HEAD
         if (isScanning)
+=======
+        if (isScanning) // 로딩 중이면 로딩 인디케이터 표시
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
           CircularProgressIndicator(),
         Expanded(
           child: ListView.builder(

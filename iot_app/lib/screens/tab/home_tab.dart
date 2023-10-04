@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iot_app/screens/information/animal_information_screen.dart';
+<<<<<<< HEAD
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:intl/intl.dart';
@@ -9,12 +10,18 @@ class HomeTab extends StatefulWidget {
   final String username; // 사용자 이름을 받을 변수 추가
 
   const HomeTab({required this.username, Key? key}) : super(key: key);
+=======
+
+class HomeTab extends StatefulWidget {
+  const HomeTab({super.key});
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
 
   @override
   State<HomeTab> createState() => _HomeTabState();
 }
 
 class _HomeTabState extends State<HomeTab> {
+<<<<<<< HEAD
   String petName = '';
   String petGender = '';
   String petBirth = '';
@@ -57,6 +64,8 @@ class _HomeTabState extends State<HomeTab> {
     }
   }
 
+=======
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -67,8 +76,18 @@ class _HomeTabState extends State<HomeTab> {
           children: [
             _animalInformation(
               battery: 20,
+<<<<<<< HEAD
               name: petName, // petName 사용
               birthday: formattedBirth, // petBirth 사용
+=======
+              name: '삐삐',
+              birthday: '20.01.01',
+            ),
+            _animalInformation(
+              battery: 0,
+              name: '냥냥',
+              birthday: '20.01.01',
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
             ),
           ],
         )
@@ -86,8 +105,12 @@ class _HomeTabState extends State<HomeTab> {
         Navigator.of(context).push(
           MaterialPageRoute(
             builder: (context) {
+<<<<<<< HEAD
               // AnimalInformationScreen를 생성할 때 사용자 이름을 전달
               return AnimalInformationScreen(username: widget.username);
+=======
+              return AnimalInformationScreen();
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
             },
           ),
         );
@@ -109,6 +132,7 @@ class _HomeTabState extends State<HomeTab> {
               color: Colors.grey[350],
               borderRadius: BorderRadius.circular(55),
             ),
+<<<<<<< HEAD
           child: ClipRRect(
             borderRadius: BorderRadius.circular(55),
             child: Image.asset(
@@ -117,6 +141,9 @@ class _HomeTabState extends State<HomeTab> {
             ),
           ),
         ),
+=======
+          ),
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
           SizedBox(height: 20),
           Text(
             name,

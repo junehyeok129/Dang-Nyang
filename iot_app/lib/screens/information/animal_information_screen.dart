@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iot_app/widget/animal_profile.dart';
 import 'package:iot_app/widget/custom_pie_chart.dart';
+<<<<<<< HEAD
 import 'package:iot_app/screens/tab/home_tab.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -11,6 +12,11 @@ class AnimalInformationScreen extends StatefulWidget {
   final String username; // 사용자 이름을 받는 변수 추가
 
   const AnimalInformationScreen({super.key, required this.username});
+=======
+
+class AnimalInformationScreen extends StatefulWidget {
+  const AnimalInformationScreen({super.key});
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
 
   @override
   State<AnimalInformationScreen> createState() =>
@@ -18,6 +24,7 @@ class AnimalInformationScreen extends StatefulWidget {
 }
 
 class _AnimalInformationScreenState extends State<AnimalInformationScreen> {
+<<<<<<< HEAD
   String petName = '';
   String petGender = '';
   String petBirth = '';
@@ -99,6 +106,8 @@ class _AnimalInformationScreenState extends State<AnimalInformationScreen> {
     }
   }
 
+=======
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -107,8 +116,13 @@ class _AnimalInformationScreenState extends State<AnimalInformationScreen> {
         child: Column(
           children: [
             AnimalProfile(
+<<<<<<< HEAD
               name: petName, // 서버에서 가져온 동물 정보 사용
               type: petSort, // 서버에서 가져온 동물 정보 사용
+=======
+              name: '삐삐',
+              type: '말티푸/여아',
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
             ),
             Expanded(
               child: Column(
@@ -151,7 +165,11 @@ class _AnimalInformationScreenState extends State<AnimalInformationScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
+<<<<<<< HEAD
                   stepPercentage,
+=======
+                  '0%',
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
                   style: TextStyle(
                     fontSize: 12,
                     color: Colors.black,
@@ -164,7 +182,11 @@ class _AnimalInformationScreenState extends State<AnimalInformationScreen> {
                     Image.asset('assets/images/thermometer.png'),
                     SizedBox(width: 4),
                     Text(
+<<<<<<< HEAD
                       temperature,
+=======
+                      '36.5 C',
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
                       style: TextStyle(
                         fontSize: 18,
                         color: Colors.black,
@@ -179,7 +201,11 @@ class _AnimalInformationScreenState extends State<AnimalInformationScreen> {
                     Image.asset('assets/images/heart-attack.png'),
                     SizedBox(width: 4),
                     Text(
+<<<<<<< HEAD
                       heartRate,
+=======
+                      '88BPM',
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
                       style: TextStyle(
                         fontSize: 18,
                         color: Colors.black,
@@ -206,7 +232,11 @@ class _AnimalInformationScreenState extends State<AnimalInformationScreen> {
         color: Colors.white,
       ),
       child: Text(
+<<<<<<< HEAD
         '$petName는 휴식 중이에요', // 서버에서 가져온 동물 이름 사용
+=======
+        '삐삐는 휴식 중이에요',
+>>>>>>> 2f22ee43d93b3984ce0057dc7bbfd5d6f9725e40
         style: TextStyle(
           fontSize: 22,
           fontWeight: FontWeight.bold,
