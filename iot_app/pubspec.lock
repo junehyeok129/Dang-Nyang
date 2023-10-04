@@ -17,6 +17,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
+  calendar_view:
+    dependency: "direct main"
+    description:
+      name: calendar_view
+      sha256: "26b47b00e045c5874df3803960765775457f4666b13d5ae7663e66209834424e"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.4"
   characters:
     dependency: transitive
     description:
@@ -148,10 +156,10 @@ packages:
     dependency: "direct main"
     description:
       name: intl
-      sha256: "910f85bce16fb5c6f614e117efa303e85a1731bb0081edf3604a2ae6e9a3cc91"
+      sha256: "3bc132a9dbce73a7e4a21a17d06e1878839ffbf975568bc875c60537824b0c4d"
       url: "https://pub.dev"
     source: hosted
-    version: "0.17.0"
+    version: "0.18.1"
   lints:
     dependency: transitive
     description:
@@ -184,6 +192,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
+  nested:
+    dependency: transitive
+    description:
+      name: nested
+      sha256: "03bac4c528c64c95c722ec99280375a6f2fc708eec17c7b3f07253b626cd2a20"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
   path:
     dependency: "direct main"
     description:
@@ -240,6 +256,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.0"
+  provider:
+    dependency: "direct main"
+    description:
+      name: provider
+      sha256: cdbe7530b12ecd9eb455bdaa2fcb8d4dad22e80b8afb4798b41479d5ce26847f
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.0.5"
   rxdart:
     dependency: transitive
     description:
@@ -357,6 +381,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
+  syncfusion_flutter_charts:
+    dependency: "direct main"
+    description:
+      name: syncfusion_flutter_charts
+      sha256: b1c706cea163059ecfe89132ca078f83d31e54cc99ecd1fabe4810e1b1dacc95
+      url: "https://pub.dev"
+    source: hosted
+    version: "23.1.36"
+  syncfusion_flutter_core:
+    dependency: transitive
+    description:
+      name: syncfusion_flutter_core
+      sha256: aea119c8117953fa5decf4a313b431e556b0959cd35ff88f8fbdc0eda9bedb06
+      url: "https://pub.dev"
+    source: hosted
+    version: "23.1.36"
   synchronized:
     dependency: transitive
     description:

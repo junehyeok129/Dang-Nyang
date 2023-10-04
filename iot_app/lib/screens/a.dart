@@ -6,7 +6,6 @@ import 'package:iot_app/screens/tab/health_tab.dart';
 import 'package:iot_app/screens/tab/my_tab.dart';
 import 'package:iot_app/widget/bottomBar.dart';
 import 'package:flutter_blue/flutter_blue.dart';
-import 'package:shared_preferences/shared_preferences.dart'; // 추가
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,22 +16,6 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   var tabIndex = 0;
-  String _username = ''; // 유저 아이디 추가
-
-  @override
-  void initState() {
-    super.initState();
-    _loadUsername(); // 유저 아이디 정보 불러오기
-  }
-
-  // 유저 아이디 정보 불러오기
-  void _loadUsername() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    String username = prefs.getString('username') ?? '';
-    setState(() {
-      _username = username;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -43,29 +26,17 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: AppBar(
           backgroundColor: Color(0xfffff1cd),
           elevation: 0,
-          title: Row(
-            children: [
-              Text(
-                '댕냥워치',
-                style: TextStyle(
-                  fontSize: 25,
-                  color: Colors.black,
-                ),
-              ),
-              Spacer(),
-              Text(
-                'id: $_username',
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.black,
-                ),
-              ),
-            ],
+          title: Text(
+            '댕냥워치',
+            style: TextStyle(
+              fontSize: 25,
+              color: Colors.black,
+            ),
           ),
         ),
         body: TabBarView(
           children: [
-            HomeTab(username: _username), // _username 변수를 전달
+            HomeTab(),
             HealthTab(),
             CalendarTab(),
             MyTab(),
@@ -122,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
               label: '개발자',
               labelStyle: TextStyle(fontSize: 12, color: Colors.black),
               onTap: () {
-                // TODO: 개발자 모드 기능 수행
+                // TODO: 삭제 기능 수행
               },
             ),
           ],
@@ -150,7 +121,7 @@ class _BluetoothDeviceScreenState extends State<BluetoothDeviceScreen> {
 
   void _startScan() {
     setState(() {
-      isScanning = true;
+      isScanning = true; // 스캔 시작시 로딩 상태 변경
       scanResults.clear();
     });
 
@@ -161,7 +132,7 @@ class _BluetoothDeviceScreenState extends State<BluetoothDeviceScreen> {
       });
     }).onDone(() {
       setState(() {
-        isScanning = false;
+        isScanning = false; // 스캔 종료시 로딩 상태 변경
       });
     });
   }
@@ -188,7 +159,7 @@ class _BluetoothDeviceScreenState extends State<BluetoothDeviceScreen> {
             ),
           ],
         ),
-        if (isScanning)
+        if (isScanning) // 로딩 중이면 로딩 인디케이터 표시
           CircularProgressIndicator(),
         Expanded(
           child: ListView.builder(

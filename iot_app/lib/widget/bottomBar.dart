@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class BottomBar extends StatelessWidget {
-  // const Bottom({ Key? key }) : super(key: key);
+  const BottomBar({this.onTap, Key? key}) : super(key: key);
+
+  final Function(int index)? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -10,51 +12,66 @@ class BottomBar extends StatelessWidget {
       child: Container(
         height: 50,
         child: TabBar(
-          labelColor: Colors.blue,
+          labelColor: Color(0xffffb800),
           unselectedLabelColor: Colors.black,
           indicatorColor: Colors.transparent,
+          onTap: onTap,
           tabs: [
             Tab(
-                icon: Icon(
-                  Icons.home,
-                  size: 18,
+              iconMargin: EdgeInsets.zero,
+              icon: Icon(
+                Icons.home_outlined,
+                size: 22,
+              ),
+              child: Text(
+                '홈',
+                style: TextStyle(
+                  fontSize: 10,
                 ),
-                child: Text(
-                  '홈',
-                  style: TextStyle(
-                    fontSize: 9,
-                  ),
-                )),
+              ),
+            ),
             Tab(
-                icon: Image.asset('images/bottomBar/heartAttack.png',width: 18,height: 18,),
-                text: '건강',
-                  ),
-            Tab(
-                icon: Icon(
-                  Icons.calendar_today,
-                  size: 18,
+              iconMargin: EdgeInsets.zero,
+              icon: Icon(
+                Icons.heart_broken_outlined,
+                size: 22,
+              ),
+              child: Text(
+                '건강',
+                style: TextStyle(
+                  fontSize: 10,
                 ),
-                child: Text(
-                  '일정',
-                  style: TextStyle(
-                    fontSize: 9,
-                  ),
-                )),
+              ),
+            ),
             Tab(
-                icon: Icon(
-                  Icons.person,
-                  size: 18,
+              iconMargin: EdgeInsets.zero,
+              icon: Icon(
+                Icons.calendar_today_outlined,
+                size: 22,
+              ),
+              child: Text(
+                '일정',
+                style: TextStyle(
+                  fontSize: 10,
                 ),
-                child: Text(
-                  '마이',
-                  style: TextStyle(
-                    fontSize: 9,
-                  ),
-                )),
+              ),
+            ),
+            Tab(
+              iconMargin: EdgeInsets.zero,
+              icon: Icon(
+                Icons.person_outlined,
+                size: 22,
+              ),
+              child: Text(
+                '마이',
+                style: TextStyle(
+                  fontSize: 10,
+                ),
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
-

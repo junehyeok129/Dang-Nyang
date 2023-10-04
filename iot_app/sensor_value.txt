@@ -1,0 +1,344 @@
+2023-10-04 20:03:35	
+Temperature = 27.63
+Walk = 2
+HeartRate =200
+
+
+2023-10-04 20:03:36	
+Temperature = 27.49
+Walk = 2
+HeartRate =193
+
+
+2023-10-04 20:03:37	
+Temperature = 27.47
+Walk = 2
+HeartRate =213
+
+
+2023-10-04 20:03:38	
+Temperature = 27.53
+Walk = 2
+He
+2023-10-04 20:03:38	artRate =221
+
+
+2023-10-04 20:03:39	
+Temperature = 25.53
+Walk = 2
+HeartRate =226
+
+
+2023-10-04 20:03:40	
+Temperature = 42.15
+Walk = 2
+HeartRate =229
+
+
+2023-10-04 20:03:41	
+Temperature = 37.41
+Walk = 2
+HeartRate =199
+
+
+2023-10-04 20:03:42	
+Temperature = 28.53
+Walk = 2
+HeartRate =157
+
+
+2023-10-04 20:03:43	
+Temperature = 27.95
+Walk = 2
+HeartRate =136
+
+
+2023-10-04 20:03:44	
+Temperature = 27.37
+Walk = 2
+He
+2023-10-04 20:03:44	artRate =131
+
+
+2023-10-04 20:03:45	
+Temperature = 26.97
+Walk = 2
+HeartRate =135
+
+
+2023-10-04 20:03:46	
+Temperature = 27.75
+Walk = 3
+HeartRate =158
+
+
+2023-10-04 20:03:47	
+Temperature = 25.99
+Walk = 3
+HeartRate =151
+
+
+2023-10-04 20:03:48	
+Temperature = 25.73
+Walk = 3
+HeartRate =149
+
+
+2023-10-04 20:03:49	
+Temperature = 25.85
+Walk = 3
+HeartRate =135
+
+
+2023-10-04 20:03:50	
+Temperature = 25.91
+Walk = 3
+HeartRate =132
+
+
+2023-10-04 20:03:51	
+Temperature = 26.23
+Walk = 3
+HeartRate =158
+
+
+2023-10-04 20:03:52	
+Temperature = 26.27
+Walk = 3
+HeartRate =187
+
+
+2023-10-04 20:03:53	
+Temperature = 26.93
+Walk = 3
+HeartRate =202
+
+
+2023-10-04 20:03:54	
+Temperature = 27.23
+Walk = 3
+HeartRate =188
+
+
+2023-10-04 20:03:55	
+Temperature = 27.23
+Walk = 3
+HeartRate =179
+
+
+2023-10-04 20:03:56	
+Temperature = 27.63
+Walk = 3
+HeartRate = 0
+
+
+2023-10-04 20:03:57	
+Temperature = 27.61
+Walk = 3
+HeartRate = 0
+
+
+2023-10-04 20:03:58	
+Temperature = 27.49
+Walk = 3
+HeartRate = 0
+
+
+2023-10-04 20:03:59	
+Temperature = 27.43
+Walk = 3
+He
+2023-10-04 20:03:59	artRate = 0
+
+
+2023-10-04 20:04:00	
+Temperature = 27.59
+Walk = 3
+HeartRate =63
+
+
+2023-10-04 20:04:01	
+Temperature = 27.43
+Walk = 3
+HeartRate = 0
+
+
+2023-10-04 20:04:02	
+Temperature = 27.17
+Walk = 3
+HeartRate =63
+
+
+2023-10-04 20:04:03	
+Temperature = 27.31
+Walk = 3
+HeartRate = 0
+
+
+2023-10-04 20:04:04	
+Temperature = 27.37
+Walk = 3
+HeartRate = 0
+
+
+2023-10-04 20:04:05	
+Temperature = 27.17
+Walk = 3
+HeartRate =55
+
+
+2023-10-04 20:04:06	
+Temperature = 27.41
+Walk = 3
+HeartRate =53
+
+
+2023-10-04 20:04:07	
+Temperature = 27.69
+Walk = 3
+HeartRate =55
+
+
+2023-10-04 20:04:08	
+Temperature = 27.03
+Walk = 3
+HeartRate =66
+
+
+2023-10-04 20:04:09	
+Temperature = 27.11
+Walk = 3
+HeartRate =121
+
+
+2023-10-04 20:04:10	
+Temperature = 27.35
+Walk = 3
+HeartRate =194
+
+
+2023-10-04 20:04:11	
+Temperature = 27.05
+Walk = 3
+HeartRate =207
+
+
+2023-10-04 20:04:12	
+Temperature = 27.17
+Walk = 3
+HeartRate =211
+
+
+2023-10-04 20:04:13	
+Temperature = 27.35
+Walk = 3
+HeartRate =184
+
+
+2023-10-04 20:04:14	
+Temperature = 24.69
+Walk = 3
+HeartRate =175
+
+
+2023-10-04 20:04:15	
+Temperature = 23.17
+Walk = 3
+HeartRate =178
+
+
+2023-10-04 20:04:16	
+Temperature = 23.03
+Walk = 3
+HeartRate =224
+
+
+2023-10-04 20:04:17	
+Temperature = 22.99
+Walk = 3
+He
+2023-10-04 20:04:17	artRate =218
+
+
+2023-10-04 20:04:18	
+Temperature = 22.87
+Walk = 3
+HeartRate =215
+
+
+2023-10-04 20:04:19	
+Temperature = 23.21
+Walk = 3
+HeartRate =209
+
+
+2023-10-04 20:04:20	
+Temperature = 25.85
+Walk = 3
+HeartRate =218
+
+
+2023-10-04 20:04:21	
+Temperature = 26.23
+Walk = 3
+HeartRate =216
+
+
+2023-10-04 20:04:22	
+Temperature = 26.23
+Walk = 3
+HeartRate =189
+
+
+2023-10-04 20:04:23	
+Temperature = 26.11
+Walk = 3
+HeartRate =179
+
+
+2023-10-04 20:04:24	
+Temperature = 26.11
+Walk = 3
+HeartRate = 0
+
+
+2023-10-04 20:04:25	
+Temperature = 26.29
+Walk = 3
+HeartRate = 0
+
+
+2023-10-04 20:04:26	
+Temperature = 26.55
+Walk = 3
+HeartRate = 0
+
+
+2023-10-04 20:04:27	
+Temperature = 26.37
+Walk = 3
+HeartRate = 0
+
+
+2023-10-04 20:04:28	
+Temperature = 26.47
+Walk = 3
+HeartRate = 0
+
+
+2023-10-04 20:04:29	
+Temperature = 26.67
+Walk = 3
+HeartRate = 0
+
+
+2023-10-04 20:04:30	
+Temperature = 26.23
+Walk = 3
+HeartRate = 0
+
+
+2023-10-04 20:04:38	
+Temperature = 29.47
+Walk = 3
+HeartRate = 0

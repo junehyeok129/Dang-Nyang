@@ -91,8 +91,12 @@ class _SignupScreenState extends State<SignupScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xfffff1cd),
       appBar: AppBar(
-        title: Text('회원가입'),
+        title: Text(
+          '회원가입',
+          style: TextStyle(color: Colors.black)),
+        backgroundColor: Color(0xfffff1cd),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -105,7 +109,18 @@ class _SignupScreenState extends State<SignupScreen> {
             TextFormField(
               controller: _passwordController,
               obscureText: true,
-              decoration: InputDecoration(labelText: 'Password'),
+              // Fix ing.......
+              decoration: InputDecoration(
+                labelText: 'Password',
+                labelStyle: TextStyle(color: Colors.black),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.black),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.black),
+                  ),
+                    ),
+                  style: TextStyle(color: Colors.black),
             ),
             SizedBox(height: 8),
             TextFormField(
